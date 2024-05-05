@@ -1,8 +1,9 @@
-html {
+html{
   height: 100%;
   width: 100%;
-  color: #812999;
+  color: #25df34;
   background-color: #275eb7;
-  font:menu;
+  font-family: Comme;
+  font-weight: bolder;
   font-size:x-large;
 }
