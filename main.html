@@ -9,17 +9,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <script>!alert("hey there this is my website, feel free to explore")</script>
-  <img class="logo" src="logo2.png">
+  <input class="type" type="text" placeholder="type something or DIE">
+  <img class="logo" src="pngtubers/logo2.png">
   <p>  </p>
   <a href="links.html">
     <button class="links">links</button>
   </a>
-  <p>I hid some secrets in a lot of places... <span class="redspan">Please do not tell <span class="anyone">ANYONE</span> where they are.</span></p>
+  <a href="quiz.html">
+    <button class="quiz">quiz</button>
+  </a>
+  <p class = "maintextmiddle">I hid some secrets in a lot of places... <span class="redspan">Please do not tell <span class="anyone">ANYONE</span> where they are.</span></p>
   <style>
+    .type {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
     .redspan {
       color:darkred;
       text-decoration: underline;
@@ -30,14 +42,25 @@
     }
     .links {
       background-color: rgb(25, 0, 255);
-       color: rgb(0, 0, 0);
-       border: none;
-       height: 22.5px;
-       width: 82px;
-       font-weight:600;
-       border-radius: 2px;
-       margin-top: 0px;
-       cursor: pointer;
+      color: rgb(0, 0, 0);
+      border: none;
+      height: 22.5px;
+      width: 82px;
+      font-weight:600;
+      border-radius: 2px;
+      margin-top: 0px;
+      cursor: pointer;
+      }
+    .quiz {
+      background-color: rgb(228, 101, 17);
+      color: rgb(0, 0, 0);
+      border: none;
+      height: 22.5px;
+      width: 82px;
+      font-weight:600;
+      border-radius: 2px;
+      margin-top: 0px;
+      cursor: pointer;
       }
       .links:hover {
       opacity: 0.8;
@@ -45,9 +68,19 @@
       .links:active {
       opacity: 0.6;
       }
+      .quiz:hover {
+      opacity: 0.8;
+      }
+      .quiz:active {
+      opacity: 0.6;
+      }
       .logo {
-        width: 600px;
-        object-position: 0px, 0px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .maintextmiddle {
+        text-align: center;
       }
   </style>
 </body>
