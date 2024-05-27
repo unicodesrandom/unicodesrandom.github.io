@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oh no...</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="main.html">
+        <button class="back">back to main</button>
+    </a>
+    <div class="main">
+        <div>
+            <button class="rollerx" onclick="
+            roll()
+                "style="
+            height: 20px;">roll</button>
+        </div>
+    </div>
+    <div class="side">
+        <div>
+            <button class="reset" onclick="
+            reset()
+                "style="
+            height: 20px;
+            margin: 0px 5px;">reset</button>
+        </div>
+        <div>
+            <p><span class="message"style="
+                margin: 0px 5px;"
+            >...</span></p>
+        </div>
+    </div>
+    <div class = "bottom">
+        <p class = "tag" style="
+        margin: 0px 5px;">
+            
+        </p>
+        <p class="tags" style="
+        margin: 0px 5px;">
+            
+        </p>
+    </div>
+    <p>press reset then roll if not working.</p>
+    <script src="lootbox.js"></script>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            max-width: 40%;
+            margin-left: 30%;
+            align-items: center;
+        }
+        .side {
+            display: flex;
+            justify-content: center;
+            max-width: 60%;
+            margin-left: 20%;
+            align-items: center;
+        }
+        .bottom {
+            display: flex;
+            justify-content: center;
+            max-width: 60%;
+            margin-left: 20%;
+            align-items: center;
+        }
+        .back,.rollerx {
+            display: block;
+            border-radius: 2px;
+            border: none;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            width: 100px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .reset {
+            display: block;
+            border-radius: 2px;
+            border: none;
+            background-color: rgb(128, 15, 15);
+            color: rgb(0, 0, 0);
+            width: 50px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .rollerx:hover,.back:hover,.reset:hover {
+            opacity: 0.8;
+        }
+        .rollerx:active,.back:active,.reset:active {
+            opacity: 0.6;
+        }
+    </style>
+</body>
+</html>

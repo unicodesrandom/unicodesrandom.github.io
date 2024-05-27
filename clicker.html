@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICK. WORK.</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="main.html">
+        <button class="back">back to main</button>
+    </a>
+
+    <button class="clicker" onclick="
+    clickCookie()
+    ">cookie!11</button>
+
+    <p>You have <span class="amount">1</span> cookies.</p>
+
+    <p>You also have a x<span class="boost">1</span> boost.</p>
+
+    <p>All data is saved by default. Sorry about how buggy this is.</p>
+
+    <button class="reset" onclick="
+        reset()
+    ">reset</button>
+    <script src="clicker.js"></script>
+    <style>
+        .clicker {
+            background-color: rgb(236, 14, 14);
+            color: rgb(24, 0, 0);
+            border: none;
+            height: 22.5px;
+            width: 82px;
+            font-weight:600;
+            border-radius: 2px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .clicker:hover,.back:hover,.reset:hover {
+            opacity: 0.8;
+        }
+        .clicker:active,.back:active,.reset:active {
+            opacity: 0.6;
+        }
+        .back,.reset {
+            display: block;
+            border-radius: 2px;
+            border: none;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            width: 100px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
