@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>my website :D</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <link>
   <script>!alert("hey there this is my website, feel free to explore")</script>
   <input class="type" type="text" placeholder="type something or DIE">
   <img class="logo" src="pngtubers/logo2.png">
@@ -25,8 +26,23 @@
   <a href="quiz.html">
     <button class="quiz">quiz</button>
   </a>
+  <a href="clicker.html">
+    <button class="clicker">cookies</button>
+  </a>
+  <a href="lootbox.html">
+    <button class="loot">LOOTBOX?</button>
+  </a>
   <p class = "maintextmiddle">I hid some secrets in a lot of places... <span class="redspan">Please do not tell <span class="anyone">ANYONE</span> where they are.</span></p>
   <style>
+    .links,.quiz,.clicker,.loot {
+      border: none;
+      height: 22.5px;
+      width: 82px;
+      font-weight:600;
+      border-radius: 2px;
+      margin-top: 0px;
+      cursor: pointer;
+    }
     .type {
       display: block;
       margin-right: auto;
@@ -43,45 +59,33 @@
     .links {
       background-color: rgb(25, 0, 255);
       color: rgb(0, 0, 0);
-      border: none;
-      height: 22.5px;
-      width: 82px;
-      font-weight:600;
-      border-radius: 2px;
-      margin-top: 0px;
-      cursor: pointer;
-      }
+    }
     .quiz {
-      background-color: rgb(228, 101, 17);
+      background-color: rgb(17, 228, 45);
       color: rgb(0, 0, 0);
-      border: none;
-      height: 22.5px;
-      width: 82px;
-      font-weight:600;
-      border-radius: 2px;
-      margin-top: 0px;
-      cursor: pointer;
-      }
-      .links:hover {
+    }
+    .clicker {
+      background-color: rgb(71, 31, 4);
+      color: rgb(0, 0, 0);
+    }
+    .loot {
+      background-color: rgb(249, 253, 7);
+      color: rgb(0, 0, 0);
+    }
+    .links:hover,.quiz:hover,.clicker:hover,.loot:hover {
       opacity: 0.8;
-      }
-      .links:active {
+    }
+    .links:active,.quiz:active,.clicker:active,.loot:active {
       opacity: 0.6;
-      }
-      .quiz:hover {
-      opacity: 0.8;
-      }
-      .quiz:active {
-      opacity: 0.6;
-      }
-      .logo {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .maintextmiddle {
-        text-align: center;
-      }
+    }
+    .logo {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .maintextmiddle {
+      text-align: center;
+    }
   </style>
 </body>
 
